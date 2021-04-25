@@ -26,7 +26,7 @@ export default function work(props) {
 					var date = dateFormat(post.created_at, 'dd mmmm yyyy');
 					return (
 						<li key={post.id}>
-							<Link href='/blog/post/[slug]' as={`/work/post/${post.slug}`}>
+							<Link href='/workpost/[slug]' as={`/workpost/${post.slug}`}>
 								<div className='post-container'>
 									<img className='blog-card-img' src={post.feature_image} />
 									<p className='date'>

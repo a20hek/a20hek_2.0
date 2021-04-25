@@ -15,18 +15,18 @@ export default function Home() {
 			<br />
 
 			<div className='hero'>
-				<p className='intro'>
+				<h1 className='intro'>
 					Hey there!
 					<br /> This is Abhishek Ajithkumar
-				</p>
+				</h1>
 				<br />
 				<br />
 				<br />
 				<p className='intro2'>I specialize in</p>
-				<p className='intro3'>
+				<h1 className='intro3'>
 					PRODUCT DESIGN, & <br />
 					WEB DEVELOPMENT <br />
-				</p>
+				</h1>
 				<br />
 				<p className='contact'>
 					<a href='mailto:abhishek@a20hek.com' className='email'>
@@ -36,10 +36,10 @@ export default function Home() {
 				</p>
 				<br />
 				<br />
-				<p className='blog'>
+				<h1 className='blog'>
 					oooh ooh and also, I run a <a href='/blog'>blog</a> where I write about
-					everything under the sun that interests me. Don’t forget to check it out
-				</p>
+					everything under the sun that interests me. Don’t forget to check it out {':)'}
+				</h1>
 			</div>
 		</div>
 	);
