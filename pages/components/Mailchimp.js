@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import jsonp from 'jsonp';
 
 class Mailchimp extends React.Component {
 	state = {};
@@ -53,6 +54,7 @@ class Mailchimp extends React.Component {
 					/>
 				))}
 				<button
+					style={styles.btn}
 					className='subemail'
 					disabled={status === 'sending' || status === 'success'}
 					type='submit'>
