@@ -1,5 +1,4 @@
 import React from 'react';
-import jsonp from 'jsonp';
 import PropTypes from 'prop-types';
 
 class Mailchimp extends React.Component {

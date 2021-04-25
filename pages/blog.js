@@ -3,9 +3,7 @@ import Link from 'next/link';
 import dateFormat from 'dateformat';
 import Head from 'next/head';
 import Navbar from './components/Navbar';
-import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import { useState } from 'react';
-// import Mailchimp from 'react-mailchimp-form';
 import Mailchimp from './components/Mailchimp';
 export async function getStaticProps(context) {
 	const posts = await getblogPosts();
