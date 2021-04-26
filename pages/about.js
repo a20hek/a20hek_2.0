@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar';
+import { motion } from 'framer-motion';
 
 export default function about() {
 	return (
-		<div>
+		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 			<Navbar />
 			<div>
 				<br />
@@ -28,6 +29,6 @@ export default function about() {
 					abhishek@a20hek.com would suffice.
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

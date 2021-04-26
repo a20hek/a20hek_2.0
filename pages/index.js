@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Navbar from './components/Navbar';
+import { motion } from 'framer-motion';
 
 export default function Home() {
 	return (
-		<div className='App'>
+		<motion.div className='App' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 			<Head>
 				<title>
 					Abhishek Ajithkumar | Web Developer | UI/UX Designer | Welcome to a20hek.com
@@ -41,6 +42,6 @@ export default function Home() {
 					everything under the sun that interests me. Don’t forget to check it out {':)'}
 				</h1>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

@@ -2,6 +2,7 @@ import { getworkPosts } from './api/ghost_data';
 import Link from 'next/link';
 import dateFormat from 'dateformat';
 import Navbar from './components/Navbar';
+import { motion } from 'framer-motion';
 
 export async function getStaticProps(context) {
 	const posts = await getworkPosts();
@@ -19,7 +20,7 @@ export async function getStaticProps(context) {
 
 export default function work(props) {
 	return (
-		<div>
+		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 			<Navbar />
 			<div className='post-grid'>
 				{props.posts.map((post) => {
@@ -41,6 +42,6 @@ export default function work(props) {
 					);
 				})}
 			</div>
-		</div>
+		</motion.div>
 	);
 }
