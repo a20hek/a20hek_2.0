@@ -427,6 +427,33 @@ header li {
 .footer p {
 	font-size: 0.8em;
 }
+.four-o-four {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: #00ffd1;
+	font-size: 1.5em;
+	margin: auto;
+}
+.four-o-four button {
+	background: #00ffd1;
+	border-radius: 5px;
+	height: 3em;
+	width: auto;
+	cursor: pointer;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	border: none;
+	color: #1c1c1c;
+	margin-top: 10%;
+}
+.four-o-four img {
+	margin: 1%;
+}
 
 @media (max-width: 880px) {
 	.intro {
@@ -573,6 +600,13 @@ header li {
 		margin-right: 15%;
 		margin-left: 15%;
 	}
+	.four-o-four img {
+		height: 300px;
+		width: auto;
+	}
+	.four-o-four {
+		font-size: 1.25em;
+	}
 }
 
 @media (max-width: 500px) {
@@ -607,6 +641,13 @@ header li {
 	.modal-container p {
 		font-size: 1em;
 		margin-bottom: 10%;
+	}
+	.four-o-four img {
+		height: 200px;
+		width: auto;
+	}
+	.four-o-four {
+		font-size: 1em;
 	}
 }
 
