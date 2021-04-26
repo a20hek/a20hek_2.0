@@ -6,9 +6,7 @@ export default function Home() {
 	return (
 		<motion.div className='App' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 			<Head>
-				<title>
-					Abhishek Ajithkumar | Web Developer | UI/UX Designer | Welcome to a20hek.com
-				</title>
+				<title>Abhishek Ajithkumar | Web Developer | UI/UX Designer | a20hek.com</title>
 			</Head>
 			<Navbar />
 			<br />
