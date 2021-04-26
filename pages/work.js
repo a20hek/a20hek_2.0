@@ -3,6 +3,7 @@ import Link from 'next/link';
 import dateFormat from 'dateformat';
 import Navbar from './components/Navbar';
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 export async function getStaticProps(context) {
 	const posts = await getworkPosts();
@@ -21,6 +22,9 @@ export async function getStaticProps(context) {
 export default function work(props) {
 	return (
 		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+			<Head>
+				<title>My Work-Abhishek Ajithkumar</title>
+			</Head>
 			<Navbar />
 			<div className='post-grid'>
 				{props.posts.map((post) => {
@@ -28,15 +32,19 @@ export default function work(props) {
 					return (
 						<li key={post.id}>
 							<Link href='/workpost/[slug]' as={`/workpost/${post.slug}`}>
-								<div className='post-container'>
-									<img className='blog-card-img' src={post.feature_image} />
-									<p className='date'>
-										{date} • {post.reading_time} minute read
-									</p>
-									<p className='post-title'>{post.title}</p>
-									<p className='excerpt'>{post.excerpt}</p>
-									<br />
-								</div>
+								<a target='_blank' rel='noreferrer'>
+									<motion.div
+										whileHover={{ scale: 1.05 }}
+										whileTap={{ scale: 0.95 }}
+										className='post-container'>
+										<img className='blog-card-img' src={post.feature_image} />
+										<p className='date'>
+											{date} • {post.reading_time} minute read
+										</p>
+										<p className='post-title'>{post.title}</p>
+										<p className='excerpt'>{post.excerpt}</p>
+									</motion.div>
+								</a>
 							</Link>
 						</li>
 					);

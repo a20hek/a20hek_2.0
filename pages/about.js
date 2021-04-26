@@ -1,9 +1,13 @@
 import Navbar from './components/Navbar';
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 export default function about() {
 	return (
 		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+			<Head>
+				<title>{props.post.title}About Abhishek Ajithkumar</title>
+			</Head>
 			<Navbar />
 			<div>
 				<br />

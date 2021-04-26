@@ -1,7 +1,6 @@
 import { getSinglePost, getblogPosts } from '../api/ghost_data';
 import Link from 'next/link';
 import dateFormat from 'dateformat';
-import { useState } from 'react';
 import Mailchimp from 'react-mailchimp-form';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
@@ -30,7 +29,6 @@ export async function getStaticProps(context) {
 
 export default function postpage(props) {
 	var date = dateFormat(props.post.published_at, 'dd mmmm yyyy');
-	const [showModal, setShowModal] = useState(false);
 	function handleScroll() {
 		window.scroll({
 			top: document.body.offsetHeight,
