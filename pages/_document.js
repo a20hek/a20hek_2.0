@@ -5,16 +5,13 @@ export default class CustomDocument extends Document {
 		return (
 			<Html>
 				<Head>
+					<script async src='https://www.googletagmanager.com/gtag/js?id=G-QDHYX971DQ' />
 					<script
 						dangerouslySetInnerHTML={{
-							__html: `[<script async src="https://www.googletagmanager.com/gtag/js?id=G-QDHYX971DQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QDHYX971DQ');
-</script>]`,
+							__html: `window.dataLayer = window.dataLayer || [];
+										function gtag(){dataLayer.push(arguments);}
+										gtag('js', new Date());
+										gtag('config', 'G-QDHYX971DQ');`,
 						}}
 					/>
 
