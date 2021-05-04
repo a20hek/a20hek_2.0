@@ -10,8 +10,19 @@ export default function Home() {
 				<meta charSet='utf-8' />
 				<meta
 					name='description'
-					content='Personal website and blog of Abhishek Ajithkumar. I write about finance, code, design, blockchain , psychology and much more.'
+					content="Personal website and blog of Abhishek Ajithkumar. I'm a Web Developer, App Developer & UI/UX Designer. Also, I run a blog where I write about finance, code, design, blockchain , psychology and much more."
 				/>
+				<meta name='robots' content='noindex, nofollow' />
+				<meta name='googlebot' content='noindex, nofollow' />
+				<meta name='bingbot' content='noindex, nofollow' />
+				<meta name='duckduckbot' content='noindex, nofollow' />
+				<meta name='canonical' href='a20hek.com' />
+				<meta
+					name='keywords'
+					content='Abhishek, Abhishek Ajithkumar, a20hek, Abhishek Ajith,  Web Developer, React.js, Next.js, React, React Native, Javascript, Blockchain, Cryptocurrency, Finance, UI/UX designer, Product Design, India, startups, Responsive design, MERN '
+				/>
+				<meta name='author' content='Abhishek Ajithkumar' />
+
 				<title>Abhishek Ajithkumar | Web Developer | UI/UX Designer | a20hek.com</title>
 			</Head>
 			<Navbar />

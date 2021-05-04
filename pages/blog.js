@@ -26,6 +26,22 @@ export default function blog(props) {
 	return (
 		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='blogpg'>
 			<Head>
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
+				<meta charSet='utf-8' />
+				<meta
+					name='description'
+					content='Blog of Abhishek Ajithkumar. I write about finance, code, design, blockchain , psychology and much more.'
+				/>
+				<meta name='robots' content='noindex, nofollow' />
+				<meta name='googlebot' content='noindex, nofollow' />
+				<meta name='bingbot' content='noindex, nofollow' />
+				<meta name='duckduckbot' content='noindex, nofollow' />
+				<meta name='canonical' href='a20hek.com' />
+				<meta
+					name='keywords'
+					content='Abhishek, Abhishek Ajithkumar, a20hek, Abhishek Ajith,  Web Developer, React.js, Next.js, React, React Native, Javascript, Blockchain, Cryptocurrency, Finance, UI/UX designer, Product Design, India, startups, Responsive design, MERN '
+				/>
+				<meta name='author' content='Abhishek Ajithkumar' />
 				<title>The a20hek Blog</title>
 			</Head>
 			<Navbar />
