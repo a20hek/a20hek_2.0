@@ -1,7 +1,7 @@
 import { getSinglePost, getblogPosts } from '../api/ghost_data';
 import Link from 'next/link';
 import dateFormat from 'dateformat';
-import Mailchimp from '../components/Mailchimp';
+import Mailchimp from 'react-mailchimp-form';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 
