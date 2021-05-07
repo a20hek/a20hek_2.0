@@ -1,7 +1,7 @@
 import { getSinglePost, getblogPosts } from '../api/ghost_data';
 import Link from 'next/link';
 import dateFormat from 'dateformat';
-import Mailchimp from 'react-mailchimp-form';
+import Mailchimp from '../components/Mailchimp';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 
@@ -40,7 +40,8 @@ export default function postpage(props) {
 	return (
 		<div className='blogpost'>
 			<Head>
-				<title>{props.post.title}-Abhishek Ajithkumar</title>
+				<title>{props.post.title} - Abhishek Ajithkumar</title>
+				<meta name='description' content={props.post.excerpt} />
 			</Head>
 			<div className='bp-header'>
 				<Link href='/blog'>

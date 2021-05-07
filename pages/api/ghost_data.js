@@ -1,8 +1,8 @@
 import GhostContentAPI from '@tryghost/content-api';
 
 const api = new GhostContentAPI({
-	url: 'https://a20hekblog.herokuapp.com',
-	key: '8e65b142d15af71233c7fec4bf',
+	url: process.env.GHOST_URL,
+	key: process.env.GHOST_KEY,
 	version: 'v3',
 });
 

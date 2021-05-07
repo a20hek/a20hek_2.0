@@ -32,15 +32,14 @@ export default function Home() {
 			<div className='hero'>
 				<h1 className='intro'>
 					Hey there!
-					<br /> This is Abhishek Ajithkumar
+					<br /> This is Abhishek Ajithkumar.
 				</h1>
-				<br />
-				<br />
-				<br />
-				<p className='intro2'>I specialize in</p>
+				<p className='intro2'>
+					I <span className='intro-span'>build</span> and{' '}
+					<span className='intro-span'>design</span> stuff for the
+				</p>
 				<h1 className='intro3'>
-					PRODUCT DESIGN, & <br />
-					WEB DEVELOPMENT <br />
+					WEB <span className='web-and'>and</span> MOBILE <br />
 				</h1>
 				<br />
 				<p className='contact'>
@@ -49,8 +48,6 @@ export default function Home() {
 					</a>
 					&nbsp;if you think we should be working together on interesting projects
 				</p>
-				<br />
-				<br />
 				<h1 className='blog'>
 					oooh ooh and also, I run a <a href='/blog'>blog</a> where I write about
 					everything under the sun that interests me. Don’t forget to check it out {':)'}

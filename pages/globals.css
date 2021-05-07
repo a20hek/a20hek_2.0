@@ -115,19 +115,30 @@ header li {
 	font-weight: 600;
 	font-size: 2.2rem;
 	letter-spacing: -0.02em;
+	padding-top: 2%;
+	padding-bottom: 3%;
 }
 
 .intro2 {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 600;
-	font-size: 2rem;
+	font-size: 1.8rem;
+}
+
+.intro-span {
+	color: #00ffd1;
+	font-family: 'Poppins', sans-serif;
 }
 
 .intro3 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	font-size: 2.2rem;
 	color: #00ffd1;
+	margin-top: -1%;
+}
+.web-and {
+	font-size: 1.8rem;
 }
 
 .email {
@@ -139,6 +150,7 @@ header li {
 }
 
 .contact {
+	margin-top: 0.5%%;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1.2rem;
@@ -146,6 +158,7 @@ header li {
 }
 
 .blog {
+	margin-top: 5%;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	font-size: 1.5rem;
@@ -457,19 +470,13 @@ header li {
 
 @media (max-width: 880px) {
 	.intro {
-		position: relative;
-		top: -1em;
 		font-size: 1.75em;
-		margin-top: 5%;
+		margin-bottom: 2%;
 	}
 	.intro2 {
-		position: relative;
-		top: -1.5em;
-		font-size: 1.7em;
+		font-size: 1.6em;
 	}
 	.intro3 {
-		position: relative;
-		top: -1.5em;
 		font-size: 1.7em;
 	}
 	.email {
@@ -477,21 +484,20 @@ header li {
 	}
 	.contact {
 		font-size: 0.8em;
-		position: relative;
-		top: -3em;
+		margin-bottom: 5%;
+	}
+	.web-and {
+		font-size: 0.9em;
 	}
 	.blog {
-		margin-top: 10%;
 		font-size: 1.25em;
 		width: 80vw;
 		max-width: 20em;
-		position: relative;
-		top: -4em;
 	}
 	.hero {
 		display: flex;
 		position: relative;
-		top: -3em;
+		top: -5em;
 		flex-direction: column;
 		margin-right: 10%;
 		margin-left: 10%;
@@ -610,6 +616,15 @@ header li {
 }
 
 @media (max-width: 500px) {
+	.hero {
+		top: -2em;
+	}
+	.contact {
+		margin-bottom: 10%;
+	}
+	.intro {
+		margin-bottom: 5%;
+	}
 	.sub-btn {
 		margin-top: 0;
 		margin-left: 10%;
@@ -622,9 +637,7 @@ header li {
 	.post-grid {
 		top: auto;
 	}
-	.blog {
-		top: -2em;
-	}
+
 	.ola {
 		font-size: 1.5em;
 	}
