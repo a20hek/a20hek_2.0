@@ -71,7 +71,7 @@ export default function postpage(props) {
 			<img className='bp-img' src={props.post.feature_image} />
 			<div className='bp-txt' dangerouslySetInnerHTML={{ __html: props.post.html }} />
 			<div className='subnews'>
-				<h2>Subscribe to my newsletter!</h2>
+				<h2>Subscribe to my blog!</h2>
 				<p>
 					If you liked this article, chances are that you'll love my other stuff too. So,
 					to remain updated with my posts, drop your email below {':)'}
