@@ -370,8 +370,6 @@ header li {
 .blogpost img {
 	width: 100%;
 	height: auto;
-	padding-top: 3%;
-	padding-bottom: 3%;
 }
 .bp-img {
 	width: 100%;
@@ -393,8 +391,10 @@ header li {
 }
 .blogpost p {
 	font-size: 1.1em;
-	margin-top: 2%;
+	margin-top: 4%;
+	margin-bottom: 3%;
 	letter-spacing: -0.015em;
+	font-weight: 300;
 }
 .email-teal#post {
 	height: 40px;
