@@ -111,7 +111,7 @@ header li {
 }
 
 .intro {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	font-size: 2.2rem;
 	letter-spacing: -0.02em;
@@ -120,7 +120,7 @@ header li {
 }
 
 .intro2 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	font-size: 1.8rem;
 }
@@ -142,7 +142,7 @@ header li {
 }
 
 .email {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 500;
 	font-size: 1.2rem;
 	color: #00ffd1;
@@ -151,7 +151,7 @@ header li {
 
 .contact {
 	margin-top: 0.5%%;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 1.2rem;
 	width: 25em;
@@ -171,7 +171,7 @@ header li {
 }
 
 .about {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 500;
 	font-size: 3rem;
 	color: #00ffd1;
@@ -202,25 +202,24 @@ header li {
 	height: 2.5em;
 	width: 7em;
 	cursor: pointer;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	border: none;
 	font-size: 1em;
 }
 
 .date {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 300;
 	font-size: 0.9em;
 	opacity: 0.8;
 	margin-top: 1%;
-	letter-spacing: -0.02em;
 }
 .excerpt {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 300;
 	font-size: 1.05em;
-	letter-spacing: -0.02em;
+	letter-spacing: -0.01em;
 	margin-bottom: 2%;
 	opacity: 0.95;
 }
@@ -312,7 +311,7 @@ header li {
 	width: 100%;
 	color: #1c1c1c;
 	background-color: #00ffd1;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 500;
 	font-size: 1em;
 	cursor: pointer;
@@ -337,7 +336,7 @@ header li {
 	margin-left: 25%;
 	padding-bottom: 10%;
 	line-height: 133%;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 1.2rem;
 }
 .bp-title {
@@ -386,15 +385,15 @@ header li {
 	font-family: 'Poppins', sans-serif;
 }
 .bp-info {
-	opacity: 0.9;
+	opacity: 0.8;
 	font-size: 0.9em;
 }
 .blogpost p {
-	font-size: 1.1em;
+	font-family: 'Inter', sans-serif;
+	font-size: 1em;
 	margin-top: 4%;
 	margin-bottom: 3%;
-	letter-spacing: -0.015em;
-	font-weight: 300;
+	font-weight: 200;
 }
 .email-teal#post {
 	height: 40px;
@@ -424,7 +423,7 @@ header li {
 	height: 3em;
 	width: 7em;
 	cursor: pointer;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	border: none;
 	color: #1c1c1c;
@@ -458,7 +457,7 @@ header li {
 	height: 3em;
 	width: auto;
 	cursor: pointer;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	border: none;
 	color: #1c1c1c;
