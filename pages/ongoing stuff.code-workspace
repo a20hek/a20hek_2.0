@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "..\\..\\leetlincc"
+		},
+		{
+			"path": "..\\..\\Native"
 		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "a20hek.com"
-	}
+	]
 }
