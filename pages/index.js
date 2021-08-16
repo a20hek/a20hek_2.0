@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from './components/Navbar';
 import { motion } from 'framer-motion';
+import { Heading } from '@chakra-ui/react';
 
 export default function Home() {
 	return (
@@ -30,10 +31,10 @@ export default function Home() {
 			<br />
 			<br />
 			<div className='hero'>
-				<h1 className='intro'>
+				<Heading className='intro'>
 					Hey there!
 					<br /> This is Abhishek Ajithkumar.
-				</h1>
+				</Heading>
 				<p className='intro2'>
 					I <span className='intro-span'>build</span> and{' '}
 					<span className='intro-span'>design</span> stuff for the

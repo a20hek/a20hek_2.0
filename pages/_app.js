@@ -1,11 +1,15 @@
 import { AnimatePresence } from 'framer-motion';
-import './globals.css';
+import { ChakraProvider } from '@chakra-ui/react';
+import { theme } from '../theme';
+import 'focus-visible/dist/focus-visible';
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<AnimatePresence exitBeforeEnter>
-			<Component {...pageProps} />
-		</AnimatePresence>
+		<ChakraProvider theme={theme}>
+			<AnimatePresence exitBeforeEnter>
+				<Component {...pageProps} />
+			</AnimatePresence>
+		</ChakraProvider>
 	);
 }
 
