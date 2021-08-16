@@ -1,10 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "..\\..\\leetlincc"
+			"path": "..\\..\\learning-express"
 		},
 		{
-			"path": "..\\..\\Native"
+			"path": "..\\..\\node-jwt"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "node-jwt"
+	}
 }
