@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Navbar from './components/Navbar';
 import { motion } from 'framer-motion';
-import { Heading } from '@chakra-ui/react';
+import { Box, Heading, Text } from '@chakra-ui/react';
 
 export default function Home() {
 	return (
@@ -26,34 +26,31 @@ export default function Home() {
 
 				<title>Abhishek Ajithkumar | Web Developer | UI/UX Designer | a20hek.com</title>
 			</Head>
-			<Navbar />
-			<br />
-			<br />
-			<br />
-			<div className='hero'>
-				<Heading className='intro'>
+			<Box height='100vh' bg='#1c1c1c'>
+				<Navbar />
+				<br />
+				<br />
+				<br />
+				<Heading textColor='#ffffff'>
 					Hey there!
 					<br /> This is Abhishek Ajithkumar.
 				</Heading>
-				<p className='intro2'>
-					I <span className='intro-span'>build</span> and{' '}
-					<span className='intro-span'>design</span> stuff for the
-				</p>
-				<h1 className='intro3'>
-					WEB <span className='web-and'>and</span> MOBILE <br />
-				</h1>
+				<Text textColor='#ffffff'>
+					I <span>build</span> and <span>design</span> stuff for the
+				</Text>
+				<Heading textColor='#ffffff'>
+					WEB <span>and</span> MOBILE <br />
+				</Heading>
 				<br />
-				<p className='contact'>
-					<a href='mailto:abhishek@a20hek.com' className='email'>
-						Email me
-					</a>
+				<Text textColor='#ffffff'>
+					<a href='mailto:abhishek@a20hek.com'>Email me</a>
 					&nbsp;if you think we should be working together on interesting projects
-				</p>
-				<h1 className='blog'>
+				</Text>
+				<Text textColor='#ffffff'>
 					oooh ooh and also, I run a <a href='/blog'>blog</a> where I write about
 					everything under the sun that interests me. Don’t forget to check it out {':)'}
-				</h1>
-			</div>
+				</Text>
+			</Box>
 		</motion.div>
 	);
 }
