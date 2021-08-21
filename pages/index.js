@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Navbar from './components/Navbar';
 import { motion } from 'framer-motion';
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box, Heading, Text, Flex, Link } from '@chakra-ui/react';
 
 export default function Home() {
 	return (
@@ -28,28 +28,69 @@ export default function Home() {
 			</Head>
 			<Box height='100vh' bg='#1c1c1c'>
 				<Navbar />
-				<br />
-				<br />
-				<br />
-				<Heading textColor='#ffffff'>
-					Hey there!
-					<br /> This is Abhishek Ajithkumar.
-				</Heading>
-				<Text textColor='#ffffff'>
-					I <span>build</span> and <span>design</span> stuff for the
-				</Text>
-				<Heading textColor='#ffffff'>
-					WEB <span>and</span> MOBILE <br />
-				</Heading>
-				<br />
-				<Text textColor='#ffffff'>
-					<a href='mailto:abhishek@a20hek.com'>Email me</a>
-					&nbsp;if you think we should be working together on interesting projects
-				</Text>
-				<Text textColor='#ffffff'>
-					oooh ooh and also, I run a <a href='/blog'>blog</a> where I write about
-					everything under the sun that interests me. Don’t forget to check it out {':)'}
-				</Text>
+				<Box m={['10', '10', '20']}>
+					<Heading textColor='#fff' mt={10} fontWeight='500'>
+						Hey there!
+						<br />
+						This is Abhishek Ajithkumar.
+					</Heading>
+					<br />
+					<Flex flexDir='row'>
+						<Text textColor='#fff' m={1} fontWeight='600' fontSize='3xl'>
+							I
+						</Text>
+						<Text
+							textColor='#00ffd1'
+							m={1}
+							// bgColor='#00ffd1'
+							fontWeight='600'
+							fontSize='3xl'>
+							build
+						</Text>
+						<Text m={1} textColor='#fff' fontWeight='600' fontSize='3xl'>
+							and
+						</Text>
+						<Text
+							// bgColor='#00ffd1'
+							textColor='#00ffd1'
+							m={1}
+							fontWeight='600'
+							fontSize='3xl'>
+							design
+						</Text>
+						<Text textColor='#fff' m={1} fontWeight='600' fontSize='3xl'>
+							stuff
+						</Text>
+						<Text textColor='#fff' m={1} fontWeight='600' fontSize='3xl'>
+							for
+						</Text>
+						<Text textColor='#fff' m={1} fontWeight='600' fontSize='3xl'>
+							the
+						</Text>
+					</Flex>
+					<Heading textColor='#00ffd1'>WEB and MOBILE</Heading>
+					<br />
+					<Text textColor='#fff' fontSize='lg' mt={10}>
+						<Link
+							as='mark'
+							bgColor='#00ffd1'
+							textColor='#000'
+							href='mailto:abhishek@a20hek.com'>
+							Email me
+						</Link>
+						&nbsp;if you think we should be working together on interesting projects
+					</Text>
+					<br />
+
+					<Text textColor='#fff' fontSize='2xl' fontWeight='600'>
+						also, I run a{' '}
+						<Link textColor='#00ffd1' href='/blog'>
+							blog
+						</Link>{' '}
+						where I write sometimes. <br />
+						Don’t forget to check it out {':)'}
+					</Text>
+				</Box>
 			</Box>
 		</motion.div>
 	);

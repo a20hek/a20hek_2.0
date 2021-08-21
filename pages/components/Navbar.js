@@ -27,58 +27,50 @@ import NextLink from 'next/link';
 export default function Navbar() {
 	const [display, setDisplay] = useState('none');
 	return (
-		<Box>
-			<Flex justifyContent='space-between'>
-				<Flex justifyContent='center' mt='2%' mr='3%' ml='3%'>
+		<Box pr={10} pl={10}>
+			<Flex justifyContent='space-between' p='2%'>
+				<Flex justifyContent='center'>
 					<NextLink href='/#'>
-						<Heading textColor='#00ffd1'>a20hek</Heading>
+						<Text
+							cursor='pointer'
+							fontWeight='600'
+							textColor='#00ffd1'
+							fontSize='1.5em'>
+							a20hek
+						</Text>
 					</NextLink>
 				</Flex>
 				<Flex w='100%' justifyContent='flex-end' display={['none', 'none', 'flex']}>
 					<Flex align='center'>
-						<NextLink href='/signup' passHref>
-							<Button
-								mr={20}
-								variant='outline'
-								color='white'
-								_hover={{ bg: '#222222' }}
-								colorScheme='blackAlpha'
-								onClick={() => router.push('/signup')}>
-								Signup
-							</Button>
+						<NextLink href='/blog' passHref>
+							<Link mr={20} color='#00ffd1'>
+								blog
+							</Link>
 						</NextLink>
-					</Flex>
-					<Flex align='center'>
-						<Button
-							mr={20}
-							color='white'
-							variant='ghost'
-							_hover={{ bg: '#222222' }}
-							colorScheme='blackAlpha'>
-							Login
-						</Button>
-					</Flex>
-					<Flex align='center'>
-						<NextLink href='/contact' passHref>
-							<Link mr={20} color='white'>
-								Contact
+						<NextLink href='/work' passHref>
+							<Link mr={20} color='#00ffd1'>
+								work
+							</Link>
+						</NextLink>
+						<NextLink href='mailto:abhishek@a20hek.com' passHref>
+							<Link mr={20} color='#00ffd1'>
+								contact
 							</Link>
 						</NextLink>
 						<NextLink href='/about' passHref>
-							<Link mr={20} color='white'>
-								About
+							<Link mr={20} color='#00ffd1'>
+								about
 							</Link>
 						</NextLink>
 					</Flex>
 				</Flex>
 				<HamburgerIcon
-					mt='2%'
 					mr='3%'
 					ml='3%'
-					h={10}
-					w={10}
-					color='#ffffff'
-					size='4xl'
+					h={6}
+					w={6}
+					color='#00ffd1'
+					size='2xl'
 					cursor='pointer'
 					display={['flex', 'flex', 'none']}
 					onClick={() => setDisplay('flex')}
@@ -97,7 +89,7 @@ export default function Navbar() {
 				display={display}>
 				<Flex justifyContent='flex-end' w='100vw'>
 					<CloseButton
-						color='#ffffff'
+						color='#00ffd1'
 						h={10}
 						w={10}
 						onClick={() => setDisplay('none')}
@@ -108,42 +100,31 @@ export default function Navbar() {
 					/>
 				</Flex>
 				<Flex direction='column' align='center'>
-					<Flex align='center'>
-						<NextLink href='/signup' passHref>
-							<Button
-								m={5}
-								variant='outline'
-								color='white'
-								_hover={{ bg: '#222222' }}
-								colorScheme='blackAlpha'
-								onClick={() => router.push('/signup')}
-								fontSize='2xl'>
-								Signup
-							</Button>
+					<Flex>
+						<NextLink href='/blog' passHref>
+							<Link m={5} color='#00ffd1' fontSize='2xl'>
+								blog
+							</Link>
 						</NextLink>
 					</Flex>
-					<Flex align='center'>
-						<Button
-							m={5}
-							color='white'
-							variant='ghost'
-							_hover={{ bg: '#222222' }}
-							colorScheme='blackAlpha'
-							fontSize='2xl'>
-							Login
-						</Button>
+					<Flex>
+						<NextLink href='/work' passHref>
+							<Link m={5} color='#00ffd1' fontSize='2xl'>
+								work
+							</Link>
+						</NextLink>
 					</Flex>
 					<Flex>
 						<NextLink href='/contact' passHref>
-							<Link m={5} color='white' fontSize='2xl'>
-								Contact
+							<Link m={5} color='#00ffd1' fontSize='2xl'>
+								contact
 							</Link>
 						</NextLink>
 					</Flex>
 					<Flex>
 						<NextLink href='/about' passHref>
-							<Link fontSize='2xl' m={5} color='white'>
-								About
+							<Link fontSize='2xl' m={5} color='#00ffd1'>
+								about
 							</Link>
 						</NextLink>
 					</Flex>
