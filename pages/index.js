@@ -49,8 +49,8 @@ export default function Home() {
 					&nbsp;if you think we should be working together on interesting projects
 				</p>
 				<h1 className='blog'>
-					oooh ooh and also, I run a <a href='/blog'>blog</a> where I write about
-					everything under the sun that interests me. Don’t forget to check it out {':)'}
+					also, I run a <a href='/blog'>blog</a> where I write about everything under the
+					sun that interests me. Don’t forget to check it out {':)'}
 				</h1>
 			</div>
 		</motion.div>
