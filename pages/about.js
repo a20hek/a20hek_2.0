@@ -31,14 +31,14 @@ export default function about() {
 				<br />
 				<p className='aboutxt'>
 					I’m Abhishek Ajithkumar, a 19-year-old homo sapiens, and fellow internet
-					dweller. I am into a lot of stuff ranging from code and design to blockchain,
-					finance, philosophy, writing, sales yada yada- learning bits and pieces about
-					stuff that I like as days pass.
+					dweller. I am into a lot of stuff ranging from code and design to, finance,
+					philosophy, writing etc. - learning bits and pieces about stuff that I like as
+					days pass.
 					<br />
 					By skillset, I'm a web developer and UI/UX designer. I love solving problems by
 					building stuff and by helping others build cool stuff.
 					<br />
-					<br /> Also, I love writing and sharing stuff I learn, and maybe that's the
+					<br /> Also, I love writing and sharing stuff that I learn, and maybe that's the
 					reason for me starting this blog. Plus, the idea of having a space of your own
 					on the internet does sound cool :D.
 					<br />
