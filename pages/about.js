@@ -40,7 +40,7 @@ export default function about() {
 					<br />
 					<br /> Also, I love writing and sharing stuff that I learn, and maybe that's the
 					reason for me starting this blog. Plus, the idea of having a space of your own
-					on the internet does sound cool :D.
+					on the internet does sound cool :D
 					<br />
 					You can reach out to me through Twitter DMs, or maybe just an email to
 					abhishek@a20hek.com would suffice.
